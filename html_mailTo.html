@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<button onclick="SendMail();">Test</button>
+
+<button onclick="mailto:sample@163.com">Send Mail</button>
+<script type="text/javascript">
+	function SendMail(mail) {
+		alert('mail world!');
+        var subject= "Interesting Information";
+        var body = "I thought you might find this information interesting:\r\n\r\n<";
+        body += window.location.href;
+        body += ">";
+        var uri = "mailto:?subject=";
+        uri += encodeURIComponent(subject);
+        uri += "&body=";
+        uri += encodeURIComponent(body);
+        window.open(uri);
+
+	}
+</script>
+</body>
+</html>

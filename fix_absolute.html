@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>absolute和fixed的区别</title>
+<style type="text/css">
+body{color:#fff;}
+#html{ position:relative;width:778px; height:1200px; border:1px solid #0000FF;}
+#fixed,#absolute{width:200px; height:200px; background:green;}
+#fixed{position:fixed; top:50px; left:50px;}
+#absolute{position:absolute; top:50px; left:450px;}
+</style>
+</head>
+<body>
+<div id="html">
+<div id="fixed">我在屏幕的位置不会改变</div>
+<div id="absolute">我会随屏幕滚动</div>
+</div>
+</body>
+</html>
